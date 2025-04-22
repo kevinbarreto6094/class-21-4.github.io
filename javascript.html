@@ -6,22 +6,37 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Pagina de bienvenida </h1>
-    <p id="mensaje" style="color:red">Este es un parrafo</p>
-<script>
-document.getElementById('mensaje').innerHTML="Certus"
+    <h1 id="nombre"></h1>
+    <h1 id="var1"></h1>
+    <h1 id="var2"></h1>
+    <h1 id="resultado"></h1>
+    <h1 id="resultado2"></h1>
+    <h1 id="resultado3"></h1>
+    <h1 id="resultado4"></h1>
+    <script>
+        var nombre="marcial"
+        document.getElementById('nombre').innerHTML="Mi nombre es: "+ nombre;
+       var x=10;
+       document.getElementById('var1').innerHTML="La variable 'x' es igual a: "+ x;
 
-document.write("<h2 style= 'color: blue;'> Bienvenido al segundo parrafo </h2>");
+       var z=20;
+       document.getElementById('var2').innerHTML="La variable 'z' es igual a: "+ z;
 
-window.alert('Bienvenido a certus');
+       var calculo=(x)+(z);
+       document.getElementById('resultado').innerHTML="El resultado de la suma es :"+ calculo;
 
-console.log('Mensaje de la consola del mavegador');
-</script>
-    
+       var calculo1=(x)-(z);
+       document.getElementById('resultado2').innerHTML="El resultado de la resta es :"+ calculo1;
 
+       var calculo2=(x)*(z);
+       document.getElementById('resultado3').innerHTML="El resultado de la multiplicacion es :"+ calculo2;
 
+       var calculo3=(x)/(z);
+       document.getElementById('resultado4').innerHTML="El resultado de la division es :"+ calculo3;
 
- 
+       
+              
+    </script>
+
 </body>
 </html>
